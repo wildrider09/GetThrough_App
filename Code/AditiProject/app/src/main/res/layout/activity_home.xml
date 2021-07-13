@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="getthrough.aditi.com.aditiproject.Home">
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        />
+
+    <TextView
+        android:id="@+id/passanduniform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:textColor="#fffefe"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center|left"
+        android:padding="30dp"
+
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/saad"
+        android:text="DIT University (DITU), erstwhile Dehradun Institute of Technology, is a private university near Dehradun in India, established by the non-profit Unison Group. DIT University has been established by Govt. of Uttarakhand vide Act No.10 of 2013 dated 15 February 2013 and is recognized by the UGC under section 2(F) of the UGC ACT,1956."
+        />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="205dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/food_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Food"/>
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/uniform_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Uniform"  />
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/bus_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bus"   />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

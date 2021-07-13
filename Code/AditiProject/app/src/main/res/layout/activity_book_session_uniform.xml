@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/book"
+    android:backgroundTintMode="add"
+    android:foregroundTintMode="multiply"
+    tools:context="getthrough.aditi.com.aditiproject.BookSessionUniform">
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Enter year"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#644ad7"
+        android:text="Accept" />
+    <EditText
+        android:id="@+id/numberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/yearText"
+        android:layout_below="@+id/yearText"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:hint="Enter number"
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/slotText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/numberText"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="select slot" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/numberText"
+        android:layout_below="@+id/slotText"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Enter date"
+        android:inputType="date" />
+
+</RelativeLayout>

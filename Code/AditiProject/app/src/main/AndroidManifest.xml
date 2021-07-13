@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="getthrough.aditi.com.aditiproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Food"
+            android:label="Food"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".FoodOrder"
+            android:label="Food Order"
+            android:parentActivityName=".Food" />
+        <activity
+            android:name=".PayNowFood"
+            android:label="Pay Now"
+            android:parentActivityName=".Food" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".GenerateBusPass"
+            android:label="Generate Bus Pass"
+            android:parentActivityName=".ViewBusPass" />
+        <activity
+            android:name=".ViewBusPass"
+            android:label="Bus Pass"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".UniformSession"
+            android:label="Uniforms"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".BookSessionUniform"
+            android:label="Book Uniform"
+            android:parentActivityName=".UniformSession" />
+        <activity
+            android:name=".FoodDetails"
+            android:parentActivityName=".Food" />
+        <activity
+            android:name=".ViewFoodOrderHistory"
+            android:parentActivityName=".Food" />
+
+        <service android:name="service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".FoodVendor" />
+        <activity android:name=".UniformVendor" />
+        <activity
+            android:name=".Vendor_all_orders"
+            android:parentActivityName=".FoodVendor" />
+        <activity android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
